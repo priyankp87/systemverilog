@@ -14,11 +14,12 @@ module rand2();
         }
     endclass
   
-    // Class handle
+    // Object handle
     random_dist random_dist1;
 
     // Initial block
     initial begin
+        // Creating the object
         random_dist1 = new ();
         for (int i=0; i<100; i++)
         begin
