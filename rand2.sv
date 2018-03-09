@@ -13,8 +13,10 @@ module rand2();
     }
   endclass
   
+  // Class handle
   random_dist random_dist1;
 
+  // Initial block
   initial begin
     random_dist1 = new ();
   
@@ -23,7 +25,5 @@ module rand2();
       random_dist1.randomize();
       $display ("Randomized value of i,j is : %d\t%d", random_dist1.i, random_dist1.j);
     end
-
-  end
-
+  end // initial-end
 endmodule
